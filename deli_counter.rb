@@ -3,11 +3,12 @@ def line(katz_deli)
   counter = 1
   if katz_deli.length == 0
     puts "The line is currently empty."
-  elsif katz_deli.length >=0 
-    puts "The line is currently: #{counter} . #{katz_deli.join(", ")}"
+  elsif katz_deli.length !=0
+  puts "The line is currently: #{counter}. #{katz_deli}"
     counter += 1
   else
     katz_deli
   end
 end
 
+#katz_deli.join(", ")
