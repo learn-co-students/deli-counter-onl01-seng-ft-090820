@@ -22,12 +22,11 @@ end
 def now_serving(katz_deli)
   if katz_deli == [ ]
     puts ("There is nobody waiting to be served!")
-  else 
+  else  
     serve = "Currently serving"
-    katz_deli.first(name)
-     serve += "#{name}."
+    serve += " #{katz_deli.shift}."
+    puts serve
   end
-  puts serve 
 end 
       
   
