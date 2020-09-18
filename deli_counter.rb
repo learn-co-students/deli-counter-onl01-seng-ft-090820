@@ -14,10 +14,20 @@ end
  
 
 def take_a_number(katz_deli, name)
-  katz_deli.push do |name, index|
-    puts "Welcome #{name}. You are number #{index} in line."
-    binding.pry
+  #katz_deli == [ ]
+  katz_deli.push(name)
+  puts ("Welcome, #{name}. You are number #{katz_deli.length} in line.")
 end
+
+def now_serving(katz_deli)
+  if katz_deli == [ ]
+    puts ("There is nobody waiting to be served!")
+  else 
+    serve = "Currently serving"
+    katz_deli.first(name)
+     serve += "#{name}."
+  end
+  puts serve 
+end 
+      
   
-# def now_serving(katz_deli)
-# end 
