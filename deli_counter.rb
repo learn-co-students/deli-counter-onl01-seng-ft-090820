@@ -15,7 +15,9 @@ end
 def current_place(katz_deli, name)
   unless katz_deli.size == 0
     puts "We'll be right with you, #{name}. You are number #{katz_deli.index(name) + 1} in line."
-  end
+  if katz_deli.size < 0
+    puts "There is nobody in line"
+    end
 end
 
 take_a_number(katz_deli, "Sandy")
@@ -26,4 +28,5 @@ while katz_deli.length > 0
   now_serving(katz_deli)
   sleep(2)
   current_place(katz_deli, "Handy")
+  end
 end
